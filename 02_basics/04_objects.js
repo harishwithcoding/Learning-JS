@@ -7,7 +7,7 @@ const tindderUser = {};
 tindderUser.id = "123abc";
 tindderUser.name = "harry";
 tindderUser.loggedIn = false;
-console.log(tindderUser);
+// console.log(tindderUser);
 
 
 const regularUser = {
@@ -28,8 +28,18 @@ const obj2 = {3: "c", 4: "d"};
 
 // const obj3 = Object.assign({}, obj1, obj2);
 const obj3 = {...obj1, ...obj2}
-console.log(obj3);
+// console.log(obj3);
 
-console.log(Object.keys(tindderUser));
-console.log(Object.values(tindderUser));
+// console.log(Object.keys(tindderUser));
+// console.log(Object.values(tindderUser));
 
+const course = {
+    coursename: "JavaScript",
+    price: 999,
+    courseinstructure: "Harish",
+}
+
+// course.courseinstructure
+
+const {courseinstructure} = course;
+console.log(courseinstructure);
